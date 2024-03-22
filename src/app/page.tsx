@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        CI/CD test 1
+        CI/CD test 2
       </div>
     </main>
   );
