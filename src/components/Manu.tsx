@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
   AppstoreOutlined,
@@ -14,6 +14,20 @@ import { Menu } from "antd";
 const Manu: React.FC = () => {
   const [current, setCurrent] = useState("about");
   const router = useRouter();
+
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsReady(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isReady) {
+    return null;
+  }
 
   const items: MenuProps["items"] = [
     {
