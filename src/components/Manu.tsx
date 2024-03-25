@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import {
   AppstoreOutlined,
   MailOutlined,
@@ -12,16 +12,22 @@ import type { MenuProps } from "antd";
 import { Menu } from "antd";
 
 const Manu: React.FC = () => {
-  const [current, setCurrent] = useState("about");
   const router = useRouter();
+  const pathname = usePathname();
 
   const [isReady, setIsReady] = useState(false);
+  const [current, setCurrent] = useState("about");
 
   useEffect(() => {
+    if (pathname === "") {
+      setCurrent("about");
+    } else {
+      setCurrent(pathname.slice(1));
+    }
+
     const timer = setTimeout(() => {
       setIsReady(true);
     }, 100);
-
     return () => clearTimeout(timer);
   }, []);
 
@@ -60,6 +66,7 @@ const Manu: React.FC = () => {
 
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
+
     if (e.key === "about") {
       router.push("/about");
     }
