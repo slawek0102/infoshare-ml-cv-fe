@@ -1,14 +1,14 @@
 .main {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*align-items: ;*/
+  padding-top: 3rem;
+  padding-left: 6rem;
   border: white;
   min-height: 100vh;
   background-color: white;
 }
-
 
 
 /*.description {*/
