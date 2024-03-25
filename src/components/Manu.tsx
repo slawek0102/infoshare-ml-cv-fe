@@ -5,7 +5,7 @@ import { useRouter, usePathname } from "next/navigation";
 import {
   AppstoreOutlined,
   MailOutlined,
-  SettingOutlined,
+  BarChartOutlined,
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 
@@ -50,7 +50,7 @@ const Manu: React.FC = () => {
     {
       label: "Projects",
       key: "projects",
-      icon: <SettingOutlined />,
+      icon: <BarChartOutlined />,
       children: [
         {
           label: "Project 1",
