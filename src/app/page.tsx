@@ -1,12 +1,11 @@
-
+import Manu from '@/components/Manu'
 import styles from "./page.module.css";
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        CI/CD test 2
-      </div>
-    </main>
+      <main className={styles.main}>
+         <Manu/>
+      </main>
   );
 }
