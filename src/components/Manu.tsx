@@ -19,7 +19,7 @@ const Manu: React.FC = () => {
   const [current, setCurrent] = useState("about");
 
   useEffect(() => {
-    if (pathname === "") {
+    if (pathname === "/") {
       setCurrent("about");
     } else {
       setCurrent(pathname.slice(1));
