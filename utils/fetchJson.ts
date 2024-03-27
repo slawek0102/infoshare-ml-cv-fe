@@ -6,7 +6,7 @@ export async function postData(url = "", data = {}) {
   };
 
   try {
-    const response = await fetch(url, data);
+    const response = await fetch(url, requestOptions); // Poprawka tutaj: użyj requestOptions zamiast data
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
