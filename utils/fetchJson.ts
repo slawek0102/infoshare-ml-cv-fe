@@ -1,12 +1,12 @@
 export async function postData(url = "", data = {}) {
   const requestOptions = {
-    method: "POST",
+    method: "GET",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   };
 
   try {
-    const response = await fetch(url, requestOptions);
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
