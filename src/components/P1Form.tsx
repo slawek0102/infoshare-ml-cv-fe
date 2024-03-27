@@ -44,25 +44,11 @@ const onFinish: FormProps<FieldType>["onFinish"] = async (formData) => {
     formData.sex = 0;
   }
 
-  // const url = "http://3.64.8.30:5001/task_1";
-  const url = "http://3.64.8.30:5001";
+  const url = "http://3.64.8.30:5001/task_1";
+  // const url = "http://3.64.8.30:5001";
 
   try {
-    const responseData = await postData(url, {
-      age: 57,
-      sex: 0,
-      cp: 1,
-      trestbps: 180,
-      chol: 536.5,
-      fbs: 1,
-      restecg: 1,
-      thalach: 174,
-      exang: 0,
-      oldpeak: 0,
-      slope: 1,
-      ca: 1,
-      thal: 1,
-    });
+    const responseData = await postData(url, formData);
     console.log("Response:", responseData);
   } catch (error) {
     console.error("Failed to submit form:", error);
