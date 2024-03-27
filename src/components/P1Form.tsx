@@ -44,7 +44,7 @@ const onFinish: FormProps<FieldType>["onFinish"] = async (formData) => {
     formData.sex = 0;
   }
 
-  const url = "http://172.31.16.27:5001/task_1";
+  const url = "https://172.31.16.27:5001/task_1";
   // const url = "http://127.0.0.1:5001/task_1";
 
   try {
