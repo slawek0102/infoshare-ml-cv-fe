@@ -32,7 +32,7 @@ export default function ProjectOverview() {
           generowania odpowiedzi.
         </p>
         <p style={{ marginBottom: 10 }}>
-          <strong>Prace DevOps</strong>: Projekt obejmował także znaczące
+          <strong>Prace DevOps</strong>: Projekt obejmuje także znaczące
           działania w zakresie DevOps, w tym hosting zarówno front endu, jak i
           back endu na AWS. Front end posiada własną nazwę domeny, a komunikacja
           odbywa się poprzez protokół SSL. W projekcie wykorzystano narzędzia
@@ -45,8 +45,8 @@ export default function ProjectOverview() {
       <p style={{ marginLeft: 10 }}>
         Sworzenie niniejszej aplikacji potwierdza moje umiejętności i wiedzę w
         zakresie realizacji projektów Machine Learning, obejmujących zarówno
-        budowę modeli ML, jak i rozwój interfejsu użytkownika wraz zapleczem
-        Back End.
+        budowę prostych modeli ML, jak i rozwój interfejsu użytkownika wraz
+        zapleczem Back End.
       </p>
     </>
   );
