@@ -1,13 +1,14 @@
 // import styles from "../page.module.css";
 import { Collapse } from "antd";
 import { P1Form } from "../../components/P1Form";
+import ProjectOverview from "./ProjectOverview";
 
 export default function Project1() {
   const items = [
     {
       key: "1",
       label: "Project Overview",
-      children: <p>text</p>,
+      children: <ProjectOverview />,
     },
     {
       key: "2",
@@ -27,8 +28,8 @@ export default function Project1() {
   return (
     <main>
       <div style={{ maxWidth: "65rem" }}>
-        <div></div>
-        <h3 style={{ marginBottom: 16 }}>Project1</h3>
+        {/*<div></div>*/}
+        {/*<h3 style={{ marginBottom: 16 }}>Project1</h3>*/}
         <Collapse items={items} />
         <h3 style={{ marginTop: 28 }}>Running Application</h3>
         <P1Form />
