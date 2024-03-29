@@ -45,8 +45,8 @@ export default function ProjectOverview() {
       <p style={{ marginLeft: 10 }}>
         Sworzenie niniejszej aplikacji potwierdza moje umiejętności i wiedzę w
         zakresie realizacji projektów Machine Learning, obejmujących zarówno
-        budowę prostych modeli ML, jak i rozwój interfejsu użytkownika wraz
-        zapleczem Back End.
+        budowę bardzo prostych modeli ML, jak i rozwój interfejsu użytkownika
+        wraz zapleczem Back End.
       </p>
     </>
   );
