@@ -1,4 +1,3 @@
-// import styles from "../page.module.css";
 import { Collapse } from "antd";
 import { P1Form } from "../../components/P1Form";
 import ProjectOverview from "./ProjectOverview";
@@ -28,10 +27,8 @@ export default function Project1() {
   return (
     <main>
       <div style={{ maxWidth: "65rem" }}>
-        {/*<div></div>*/}
-        {/*<h3 style={{ marginBottom: 16 }}>Project1</h3>*/}
         <Collapse items={items} />
-        <h3 style={{ marginTop: 28 }}>Running Application</h3>
+        <h3 style={{ marginTop: 32, marginBottom: 20 }}>Health Check</h3>
         <P1Form />
         <h3 style={{ marginTop: 28 }}>Jupiter Listing</h3>
         <iframe

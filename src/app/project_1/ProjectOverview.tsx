@@ -1,13 +1,13 @@
 export default function ProjectOverview() {
   return (
-    <p>
+    <>
       <h3>Cel Projektu</h3>
       <p style={{ marginBottom: 10, marginLeft: 10 }}>
         Celem niniejszego projektu jest opracowanie aplikacji prognozującej
         ryzyko chorób serca na podstawie określonych parametrów podanych przez
-        użytkownika. Zamiarem nie było stworzenie aplikacji o idealnym
-        interfejsie, lecz wykazanie zrozumienia procesu tworzenia systemów
-        Machine Learning (ML).
+        użytkownika i wyuczonego wcześniej modelowi ML. Zamiarem nie jest
+        stworzenie aplikacji o idealnym interfejsie, lecz wykazanie zrozumienia
+        procesu tworzenia systemów Machine Learning (ML).
       </p>
       <h3>Etapy ML</h3>
       <p style={{ marginLeft: 10 }}>
@@ -22,7 +22,7 @@ export default function ProjectOverview() {
         na BackEnd
       </p>
       <h3 style={{ marginTop: 10 }}>Rozwój Aplikacji Full Stack</h3>
-      <p style={{ marginLeft: 10 }}>
+      <div style={{ marginLeft: 10 }}>
         <strong>Front End</strong>: Stworzenie interfejsu użytkownika przy
         użyciu React i JavaScript.
         <p>
@@ -40,7 +40,7 @@ export default function ProjectOverview() {
           Certificate Manager rozwiązując liczne napodkane w czasie pracy
           problemy techniczne.
         </p>
-      </p>
+      </div>
       <h3>Podsumowanie</h3>
       <p style={{ marginLeft: 10 }}>
         Sworzenie niniejszej aplikacji potwierdza moje umiejętności i wiedzę w
@@ -48,6 +48,6 @@ export default function ProjectOverview() {
         budowę modeli ML, jak i rozwój interfejsu użytkownika wraz zapleczem
         Back End.
       </p>
-    </p>
+    </>
   );
 }
