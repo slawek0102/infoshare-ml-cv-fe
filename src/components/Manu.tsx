@@ -59,7 +59,6 @@ const Manu: React.FC = () => {
         {
           label: "Project 2",
           key: "project_2",
-          disabled: true,
         },
       ],
     },
