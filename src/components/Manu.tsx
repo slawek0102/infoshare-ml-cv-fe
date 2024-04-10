@@ -60,6 +60,10 @@ const Manu: React.FC = () => {
           label: "Project 2",
           key: "project_2",
         },
+        {
+          label: "Project 3",
+          key: "project_3",
+        },
       ],
     },
   ];
@@ -75,6 +79,9 @@ const Manu: React.FC = () => {
     }
     if (e.key === "project_2") {
       router.push("/project_2");
+    }
+    if (e.key === "project_3") {
+      router.push("/project_3");
     }
   };
 
