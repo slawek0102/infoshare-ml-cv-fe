@@ -49,7 +49,7 @@ export default function ProjectOverview() {
 
       <p style={{ marginLeft: 10, marginTop: 10 }}>
         Cel projektu to stworzenie modelu, który będzie w stanie skutecznie
-        przewidzieć wartość w kolumnie 'cnt' na podstawie pozostałych zmiennych.
+        przewidzieć wartość w kolumnie cnt na podstawie pozostałych zmiennych.
         Model ten znajdzie zastosowanie w planowaniu zasobów i strategii
         operacyjnych dla firm wypożyczających rowery, umożliwiając im
         optymalizację dostępności rowerów w odpowiedzi na zmienne warunki
