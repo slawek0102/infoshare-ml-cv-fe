@@ -61,7 +61,9 @@ export function P1Form() {
       formData.sex = 0;
     }
 
-    const url: string = "https://sgrzebyk-backend.net/task_1";
+    // const url: string = "https://sgrzebyk-backend.net/task_1";
+    const url: string =
+      "http://flask-backend-env.eba-pbidny8p.eu-central-1.elasticbeanstalk.com/task_1";
 
     try {
       const responseData: IResponse = await postData(url, formData);
