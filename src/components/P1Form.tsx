@@ -63,7 +63,7 @@ export function P1Form() {
 
     // const url: string = "https://sgrzebyk-backend.net/task_1";
     const url: string =
-      "ec2-3-68-164-67.eu-central-1.compute.amazonaws.com/task_1";
+      "http://ec2-3-68-164-67.eu-central-1.compute.amazonaws.com/task_1";
 
     try {
       const responseData: IResponse = await postData(url, formData);
