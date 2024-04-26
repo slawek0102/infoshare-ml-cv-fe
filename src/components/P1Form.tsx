@@ -61,9 +61,9 @@ export function P1Form() {
       formData.sex = 0;
     }
 
-    // const url: string = "https://sgrzebyk-backend.net/task_1";
-    const url: string =
-      "http://ip-172-31-13-23.eu-central-1.compute.internal/task_1";
+    const url: string = "https://sgrzebyk-backend.net/task_1";
+    // const url: string =
+    //   "http://ip-172-31-13-23.eu-central-1.compute.internal/task_1";
 
     try {
       const responseData: IResponse = await postData(url, formData);
